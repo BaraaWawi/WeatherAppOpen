@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct NetworkConstants{
+    
+    static let apiKey = "cdfb1cd719564cfe845180051240909"
+    static let responseFormat = "json"
+    static let weatherUrl = "https://api.worldweatheronline.com/premium/v1/weather.ashx?key=\(apiKey)&format=\(responseFormat)"
+    
+}

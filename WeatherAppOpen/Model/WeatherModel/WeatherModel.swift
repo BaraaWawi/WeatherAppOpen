@@ -12,13 +12,18 @@ struct WeatherModel : Codable {
 }
 
 struct DataModel : Codable{
-    let weather : [Weather]
+    let weather : [WeatherInfoModel]
 }
 
-struct Weather : Codable{
+struct WeatherInfoModel : Codable{
     let mintempC : String
     let maxtempC : String
     let avgtempC : String
     let sunHour : String
 }
 
+struct CountryWeatherModel : Codable{
+    let city: String
+    let weather: [WeatherInfoModel]
+
+}
